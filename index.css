@@ -1,0 +1,141 @@
+body {
+  background-color: #ededed;
+}
+header {
+  height: 600px;
+  background-image: url("./assets/photos/ff2950597c1f7f1fce40bd5b03a3d836.jpg");
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header-logo {
+  position: absolute;
+  top: 51px;
+  left: 69px;
+}
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-title {
+  width: 55%;
+  padding: 10px;
+  color: #ffd15b;
+}
+h1 {
+  text-align: center;
+  font-family: Anton;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+}
+.search-bar {
+  width: 80%;
+  padding: 10px;
+  border-radius: 11px;
+  background-color: white;
+}
+.form-control {
+  border: none;
+}
+.search-button {
+  background-color: #1b1b1b;
+  border: none;
+  border-radius: 5px;
+}
+.filters {
+  display: flex;
+  padding-top: 20px;
+  column-gap: 64px;
+}
+.filter-test {
+  width: 100%;
+}
+#search-bar-clear {
+  display: none;
+}
+.btn-filter {
+  background-color: white;
+}
+.filter-element {
+  background-color: white;
+  width: 195px;
+  padding: 16px;
+  height: 56px;
+  max-height: 315px;
+  border-radius: 11px;
+  cursor: pointer;
+  overflow: hidden;
+}
+ul {
+  padding-left: 0px;
+}
+li {
+  list-style: none;
+}
+.filter-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.filter-sub-elements {
+  display: none;
+  padding-top: 10px;
+}
+.filter-elements {
+  display: none;
+  padding-top: 10px;
+}
+.filter-sub-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 163px;
+  height: 36px;
+  border: 1px solid #c6c6c6;
+  border-radius: 2px;
+}
+.filter-sub-input {
+  width: 120px;
+  color: #7a7a7a;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+.chevron-up {
+  display: none;
+}
+.btn-sub-close {
+  padding: 0px;
+  font-size: 11px;
+}
+button:focus {
+  outline: none;
+}
+.filter-sub-search-close {
+  display: none;
+}
+.tags {
+  display: flex;
+  padding-top: 20px;
+  column-gap: 64px;
+}
+.tags-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.tag-element {
+  display: inline-flex;
+  padding: 17px 18px;
+  align-items: center;
+  width: 195px;
+  gap: 60px;
+  border-radius: 10px;
+  background: #ffd15b;
+  justify-content: space-between;
+}
