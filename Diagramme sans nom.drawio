@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-12T14:03:58.638Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="6-0zMjbz8vFohrF6iEne" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-12T14:05:53.064Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="jUrfLyK3EP2Gu1O5bcU_" version="21.7.4" type="github">
   <diagram name="Page-1" id="929967ad-93f9-6ef4-fab6-5d389245f69c">
     <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
@@ -58,7 +58,7 @@
             <mxPoint x="430" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DQ8tpov3o1DMA2q7t00S-15" value="affiche uniquement les recettes comprenant le / les&amp;nbsp; tags&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="DQ8tpov3o1DMA2q7t00S-1">
+        <mxCell id="DQ8tpov3o1DMA2q7t00S-15" value="affiche uniquement les recettes / tags comprenant le / les&amp;nbsp; tags&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="DQ8tpov3o1DMA2q7t00S-1">
           <mxGeometry x="190" y="510" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="DQ8tpov3o1DMA2q7t00S-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="DQ8tpov3o1DMA2q7t00S-1" source="DQ8tpov3o1DMA2q7t00S-11" target="DQ8tpov3o1DMA2q7t00S-15">
