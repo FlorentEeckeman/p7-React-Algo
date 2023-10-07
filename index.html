@@ -68,18 +68,23 @@
       </div>
     </header>
     <div class="recipes-block">
-      <div class="filters"></div>
+      <div class="filters-container">
+        <div class="filters"></div>
+        <div id="counter"></div>
+      </div>
       <div class="tags">
-        <div class="tags-group tags-ingredients"></div>
-        <div class="tags-group tags-appliance"></div>
-        <div class="tags-group tags-ustensils"></div>
+        <div class="tags-group tags-Ingrédients"></div>
+        <div class="tags-group tags-Appareils"></div>
+        <div class="tags-group tags-Ustensiles"></div>
       </div>
       <div class="recipes"></div>
     </div>
-    <script src="data/recipes.js" async defer></script>
-    <script src="script/utils/sortElements.js" async defer></script>
-    <script src="script/templates/filterElement.js" async defer></script>
-    <script src="script/templates/recipeCard.js" async defer></script>
-    <script src="script/utils/searchUI.js" async defer></script>
+    <script src="data/recipes.js"></script>
+    <script src="script/utils/sortElements.js"></script>
+    <script src="script/utils/recipesSort.js"></script>
+    <script src="script/templates/filterUI.js"></script>
+    <script src="script/templates/filterElement.js"></script>
+    <script src="script/templates/recipeCard.js"></script>
+    <script src="script/utils/searchUI.js"></script>
   </body>
 </html>

@@ -1,8 +1,10 @@
 async function sortElement(type, recipes, elements) {
+  let result = { Ingrédients: [], Appareils: [], Ustensiles: [] };
   switch (type) {
-    case "ingredients":
+    case "Ingrédients":
       if (!elements) {
         let container = [];
+        // console.log(recipes);
         recipes.forEach((element) => {
           element["ingredients"].forEach((recipe) => {
             container.push(
@@ -13,9 +15,8 @@ async function sortElement(type, recipes, elements) {
         });
         container.flat();
         const uniqueSet = new Set(container);
-        const backToArray = [...uniqueSet];
-        console.log(backToArray);
-        return backToArray;
+        result.Ingrédients = [...uniqueSet];
+        return result;
       } else {
         let container = [];
         recipes.forEach((item) => {
@@ -35,67 +36,62 @@ async function sortElement(type, recipes, elements) {
         });
         container.flat();
         const uniqueSet = new Set(container);
-        const backToArray = [...uniqueSet];
-        console.log(backToArray);
-        return backToArray;
+        result.Ingrédients = [...uniqueSet];
+        return result;
       }
 
       break;
-    case "appliance":
+    case "Appareils":
       if (!elements) {
         let container = [];
         recipes.forEach((element) => {
           container.push(
-            element[type].charAt(0).toUpperCase() +
-              element[type].toLowerCase().slice(1)
+            element["appliance"].charAt(0).toUpperCase() +
+              element["appliance"].toLowerCase().slice(1)
           );
         });
         container.flat();
         const elementRes = container.flat();
-        console.log(elementRes);
         const uniqueSet = new Set(elementRes);
-        const backToArray = [...uniqueSet];
-        console.log(backToArray);
-        return backToArray;
+        result.Appareils = [...uniqueSet];
+        return result;
       } else {
         let container = [];
         recipes.forEach((item) => {
           const expression =
             elements.charAt(0).toUpperCase() + elements.toLowerCase().slice(1);
           const regex = new RegExp(expression);
-          const test = item[type];
+          const test = item["appliance"];
           if (test.match(regex)) {
             container.push(
-              item[type].charAt(0).toUpperCase() +
-                item[type].toLowerCase().slice(1)
+              item["appliance"].charAt(0).toUpperCase() +
+                item["appliance"].toLowerCase().slice(1)
             );
           }
         });
         container.flat();
         const uniqueSet = new Set(container);
-        const backToArray = [...uniqueSet];
-        console.log(backToArray);
-        return backToArray;
+        result.Appareils = [...uniqueSet];
+        return result;
       }
       break;
-    case "ustensils":
+    case "Ustensiles":
       if (!elements) {
         let container = [];
         recipes.forEach((element) => {
-          element[type].forEach((recipe) => {
+          element["ustensils"].forEach((recipe) => {
             container.push(
               recipe.charAt(0).toUpperCase() + recipe.toLowerCase().slice(1)
             );
           });
         });
         const uniqueSet = new Set(container.flat());
-        const backToArray = [...uniqueSet];
-        console.log(backToArray);
-        return backToArray;
+        result.Ustensiles = [...uniqueSet];
+        return result;
       } else {
         let container = [];
         recipes.forEach((recipe) => {
-          recipe[type].forEach((item) => {
+          recipe["ustensils"].forEach((item) => {
             const expression =
               elements.charAt(0).toUpperCase() +
               elements.toLowerCase().slice(1);
@@ -110,12 +106,10 @@ async function sortElement(type, recipes, elements) {
         });
         container.flat();
         const uniqueSet = new Set(container);
-        const backToArray = [...uniqueSet];
-        console.log(backToArray);
-        return backToArray;
+        result.Ustensiles = [...uniqueSet];
+        return result;
       }
       break;
     default:
-      console.log("non trouvé");
   }
 }
