@@ -60,9 +60,7 @@ function searchFirstAlgo(data) {
   return res;
 }
 function searchBar(data) {
-  const res = searchFirstAlgo(data);
-  const res2 = searchSecondAlgo(data);
-  console.timeEnd(searchFirstAlgo(data));
+  const res = searchSecondAlgo(data);
   console.timeEnd(searchSecondAlgo(data));
   document.querySelector(".recipes").innerHTML = "";
   document.querySelector(".filters").innerHTML = "";
