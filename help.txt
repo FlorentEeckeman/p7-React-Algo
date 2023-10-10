@@ -1,4 +1,0 @@
--Factory pour gérer les variables 
--fonction qui prend en entré la liste de toute les recettes qui fait les filtre
-- fonction qui va rendre les resultats filtré
-usine a gaz revoir.
