@@ -38,7 +38,7 @@ class FilterElement {
   }
 
   addListenerOnList(title, id) {
-    const divElement = "#filter-element-" + title + id;
+    const divElement = "#filter-element-" + title + "-" + id;
     const that = this;
     this.wrapper
       .querySelector(divElement)
