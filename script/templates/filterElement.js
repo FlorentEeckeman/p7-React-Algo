@@ -37,8 +37,8 @@ class FilterElement {
       });
   }
 
-  addListenerOnList(id) {
-    const divElement = "#filter-element-" + id;
+  addListenerOnList(title, id) {
+    const divElement = "#filter-element-" + title + id;
     const that = this;
     this.wrapper
       .querySelector(divElement)
@@ -58,7 +58,7 @@ class FilterElement {
     res[title].forEach((element) => {
       document.getElementById(
         "filter-elements-" + title
-      ).innerHTML += `<li id="filter-element-${element
+      ).innerHTML += `<li id="filter-element-${title}-${element
         .replace(/\s/g, "")
         .replaceAll("(", "")
         .replaceAll(")", "")
@@ -67,6 +67,7 @@ class FilterElement {
     });
     res[title].forEach((element) => {
       this.addListenerOnList(
+        title,
         element
           .replace(/\s/g, "")
           .replaceAll("(", "")
@@ -234,7 +235,7 @@ class FilterElement {
       });
     }
     res[title].forEach((element) => {
-      filter.innerHTML += `<li id="filter-element-${element
+      filter.innerHTML += `<li id="filter-element-${title}-${element
         .replace(/\s/g, "")
         .replaceAll("(", "")
         .replaceAll(")", "")
@@ -244,6 +245,7 @@ class FilterElement {
     container.appendChild(filter);
     res[title].forEach((element) => {
       this.addListenerOnList(
+        title,
         element
           .replace(/\s/g, "")
           .replaceAll("(", "")
