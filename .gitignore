@@ -3,7 +3,6 @@
 *.zip 
 *.pdf
 *.docx
-*.drawio
 .jpg
 benchmark.PNG
 /assets/
